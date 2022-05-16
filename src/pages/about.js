@@ -25,9 +25,7 @@ const AboutPage = ({ data }, location) => {
               fluid={data.benchAccounting.childImageSharp.fluid}
               className="kg-image"
             />
-            <figcaption>
-              Finally graduated and I'm feeling so guuddddddd:D
-            </figcaption>
+            <figcaption>Just me having fun! :D</figcaption>
           </figure>
           <h3 id="dynamic-styles">Name's Kit.</h3>
           <p>
@@ -83,7 +81,7 @@ const indexQuery = graphql`
     }
     benchAccounting: file(relativePath: { eq: "me.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1360) {
+        fluid(maxWidth: 1280) {
           ...GatsbyImageSharpFluid
         }
       }
